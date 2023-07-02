@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Leaflet App</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main id="root">
+        <form id="settings-form">
+            <div class="settings-block">
+                <label>Write your country</label>
+                <input  placeholder="write your country" class="input" id="userCountry"/>
+            </div>
+            <div class="settings-block">
+                <label>Write your city</label>
+                <input  placeholder="write your city" class="input" id="userCity"/>
+            </div>
+            <button type="submit">Save</button>
+        </form>
+        <div id="map"></div>
+    </main>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
